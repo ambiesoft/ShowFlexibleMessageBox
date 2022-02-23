@@ -20,7 +20,6 @@ namespace Ambiesoft.ShowFlexibleMessageBox
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            string a = HttpUtility.UrlDecode("%3c");
             string message = args.Length == 0 ? "No Message" :
                 HttpUtility.UrlDecode(Encoding.UTF8.GetBytes(args[0]), Encoding.UTF8);
 
