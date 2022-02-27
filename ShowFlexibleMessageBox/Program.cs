@@ -34,8 +34,10 @@ namespace Ambiesoft.ShowFlexibleMessageBox
              {
                  string message = string.IsNullOrEmpty(o.MainText) ? "No Message" :
                      HttpUtility.UrlDecode(Encoding.UTF8.GetBytes(o.MainText), Encoding.UTF8);
+                 string caption = string.IsNullOrEmpty(o.Title) ? "" : 
+                    HttpUtility.UrlDecode(Encoding.UTF8.GetBytes(o.Title), Encoding.UTF8);
 
-                 FlexibleMessageBox.Show(message, o.Title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                 FlexibleMessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
              });
         }
     }
