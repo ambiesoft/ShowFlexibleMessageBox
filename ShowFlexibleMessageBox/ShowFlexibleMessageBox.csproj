@@ -38,7 +38,7 @@
       <HintPath>..\packages\CommandLineParser.2.8.0\lib\net45\CommandLine.dll</HintPath>
     </Reference>
     <Reference Include="FlexibleMessageBox">
-      <HintPath>C:\Linkout\DNAssembly.NET4\FlexibleMessageBox.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Linkout\DNAssembly.NET4.5.2\FlexibleMessageBox.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

@@ -61,8 +61,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PostBuildEvent>
-      <Command>copy "$(SolutionDir)ShowFlexibleMessageBox\dists\*.txt" "$(SolutionDir)ShowFlexibleMessageBox\bin\Release\"
-
+      <Command>copy "$(SolutionDir)ShowFlexibleMessageBox\dists\*.txt" "$(SolutionDir)ShowFlexibleMessageBox\bin\$(Configuration)\"
+copy "C:\Linkout\DNAssembly.NET4.5.2\FlexibleMessageBox.credit" "$(SolutionDir)ShowFlexibleMessageBox\bin\$(Configuration)\"
 del "$(TargetDir)zzzDist.*"
 </Command>
     </PostBuildEvent>
@@ -83,8 +83,8 @@ del "$(TargetDir)zzzDist.*"
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PostBuildEvent>
-      <Command>copy "$(SolutionDir)ShowFlexibleMessageBox\dists\*.txt" "$(SolutionDir)ShowFlexibleMessageBox\bin\Release\"
-
+      <Command>copy "$(SolutionDir)ShowFlexibleMessageBox\dists\*.txt" "$(SolutionDir)ShowFlexibleMessageBox\bin\$(Configuration)\"
+copy "C:\Linkout\DNAssembly.NET4.5.2\FlexibleMessageBox.credit" "$(SolutionDir)ShowFlexibleMessageBox\bin\$(Configuration)\"
 del "$(TargetDir)zzzDist.*"
 </Command>
     </PostBuildEvent>
