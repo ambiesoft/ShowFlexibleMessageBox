@@ -1,0 +1,32 @@
+name: ShowFlexibleMessageBox
+solution: ShowFlexibleMessageBox.sln
+targetproject: zzzDist
+configuration: Release
+targets:
+- setoutdirforbuild: false
+  outdir: Release\ShowFlexibleMessageBox
+  platform: Any CPU
+
+# archivingdir: Release\ShowFlexibleMessageBox
+
+ShouldBeFiles:
+- acknowledgements.txt
+- CommandLine.dll
+- CommandLine.xml
+- FlexibleMessageBox.credit
+- FlexibleMessageBox.dll
+- FlexibleMessageBox.pdb
+- history.txt
+- ShowFlexibleMessageBox.exe
+- ShowFlexibleMessageBox.exe.config
+- ShowFlexibleMessageBox.pdb
+
+TotalFileCount: exact
+archivedir: C:\Linkout
+remotedir: https://ambiesoft.com/ffdav/uploads/ShowFlexibleMessageBox/
+remotesha1: https://ambiesoft.com/ffdav/uploads/getSha1.php?file=ShowFlexibleMessageBox/{}
+ShouldNotBeFiles: []
+ShouldBeOneOfThem: []
+obtainverfrom: history.txt
+obtainverregex: \d+\.\d+\.\d+
+

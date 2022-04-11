@@ -45,9 +45,11 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)\ShowFlexibleMessageBox\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)\ShowFlexibleMessageBox\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -61,8 +63,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PostBuildEvent>
-      <Command>copy "$(SolutionDir)ShowFlexibleMessageBox\dists\*.txt" "$(SolutionDir)ShowFlexibleMessageBox\bin\$(Configuration)\"
-copy "C:\Linkout\DNAssembly.NET4.5.2\FlexibleMessageBox.credit" "$(SolutionDir)ShowFlexibleMessageBox\bin\$(Configuration)\"
+      <Command>copy "$(SolutionDir)ShowFlexibleMessageBox\dists\*.txt" "$(TargetDir)"
+copy "C:\Linkout\DNAssembly.NET4.5.2\FlexibleMessageBox.credit" "$(TargetDir)"
 del "$(TargetDir)zzzDist.*"
 </Command>
     </PostBuildEvent>
@@ -83,8 +85,8 @@ del "$(TargetDir)zzzDist.*"
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PostBuildEvent>
-      <Command>copy "$(SolutionDir)ShowFlexibleMessageBox\dists\*.txt" "$(SolutionDir)ShowFlexibleMessageBox\bin\$(Configuration)\"
-copy "C:\Linkout\DNAssembly.NET4.5.2\FlexibleMessageBox.credit" "$(SolutionDir)ShowFlexibleMessageBox\bin\$(Configuration)\"
+      <Command>copy "$(SolutionDir)ShowFlexibleMessageBox\dists\*.txt" "$(TargetDir)"
+copy "C:\Linkout\DNAssembly.NET4.5.2\FlexibleMessageBox.credit" "$(TargetDir)"
 del "$(TargetDir)zzzDist.*"
 </Command>
     </PostBuildEvent>
